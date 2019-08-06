@@ -1,0 +1,17 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Available items</h2>
+  <p>
+    Here you see the available items
+  </p>
+</div>
+
+{{#each this.model as |product|}}
+  <article class="product-tile">
+    <div>
+      <h3>{{product.name}}</h3>
+      <p>Price: {{product.price}}</p>
+    </div>
+      <button>Add to cart</button>
+  </article>
+{{/each}}

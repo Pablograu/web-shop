@@ -1,0 +1,35 @@
+body{
+  background-color: pink;
+  height: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.jumbo{
+  background-color: aliceblue;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.jumbo h2{
+  font-size: 40px;
+}
+.product-tile{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.product-tile:hover{
+  transform: scale(1.01)
+}
+.product-tile button {
+  cursor: pointer;
+}
+.product-tile h3{
+  font-size: 26px;
+}
+.product-tile div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
