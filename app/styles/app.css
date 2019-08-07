@@ -25,6 +25,17 @@ body{
 .product-tile:hover{
   transform: scale(1.01)
 }
+.product-tile input{
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid #eee;
+}
 .product-tile button {
   cursor: pointer;
 }
@@ -35,5 +46,5 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 250px;
+  width: 350px;
 }

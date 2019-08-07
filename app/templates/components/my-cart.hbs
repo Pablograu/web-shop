@@ -1,0 +1,19 @@
+<div class="my-cart">
+  <ul>
+    {{#each cart.cartProducts as |product|}}
+      <li>
+        {{product.name}}
+        {{product.quantity}}
+        <button {{action "remove" product}}>Remove</button>
+      </li>
+    {{/each}}
+  </ul>
+  <div class="totalPrice">
+    {{#if cart.totalPrice}}
+      Total amount:{{cart.totalPrice}}$
+    {{else}}
+      There are currently no items in your cart
+  {{/if}}
+  </div>
+</div>
+

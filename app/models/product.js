@@ -4,5 +4,4 @@ const { Model } = DS;
 export default Model.extend({
   name: DS.attr(),
   price: DS.attr(),
-
 });
