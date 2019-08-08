@@ -2,8 +2,7 @@
   <ul>
     {{#each cart.cartProducts as |product|}}
       <li>
-        {{product.name}}
-        {{product.quantity}}
+        {{product.name}} {{product.quantity}}
         <button {{action "remove" product}}>Remove</button>
       </li>
     {{/each}}

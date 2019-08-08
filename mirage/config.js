@@ -1,7 +1,7 @@
 export default function() {
   this.namespace = '/api';
 
-  this.get('/shop', function() {
+  this.get('/products', function() {
     return {
       data: [{
         type: 'product',

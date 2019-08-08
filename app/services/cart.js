@@ -12,8 +12,14 @@ export default Service.extend({
   },
 
   add(product) {
-    this.get('cartProducts').pushObject(product);
-    this.getTotal();
+    if(this.cartProducts.includes(product)){
+      this.get('cartProducts').removeObject(product);
+      this.get('cartProducts').pushObject(product);
+      this.getTotal();
+    }else{
+      this.get('cartProducts').pushObject(product);
+      this.getTotal();
+    }
   },
 
   remove(product) {

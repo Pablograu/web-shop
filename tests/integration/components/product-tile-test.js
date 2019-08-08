@@ -4,7 +4,7 @@ import setupMirage from 'ember-cli-mirage/test-support/setup-mirage';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Component | product-listing', function(hooks) {
+module('Integration | Component | product-tile', function(hooks) {
   setupRenderingTest(hooks);
   setupMirage(hooks);
 
@@ -12,15 +12,15 @@ module('Integration | Component | product-listing', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<ProductListing />`);
+    await render(hbs`<ProductTile />`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      <ProductListing>
+      <ProductTile>
         template block text
-      </ProductListing>
+      </ProductTile>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');

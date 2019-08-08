@@ -1,7 +1,15 @@
 <div class="cart-total">
-  {{#if cart.totalPrice}}
-    {{cart.totalPrice}}$
-  {{else}}
-    0$
-  {{/if}}
+  <div class="cart-amount">
+      <i class="fas fa-shopping-cart"></i>
+    {{#if cart.totalPrice}}
+      Cart amount: {{cart.totalPrice}}$
+    {{else}}
+      Cart amount: 0$
+    {{/if}}
+  </div>
+  <div class="links">
+    {{#link-to "checkout" class="menu-checkout"}}
+      Checkout
+    {{/link-to}}
+  </div>
 </div>

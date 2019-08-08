@@ -6,10 +6,9 @@ export default Component.extend({
   quantity: null,
   actions: {
     addToCart(product, quantity){
-      console.log('pelele',this.cart.cartProducts);
       let prevQuantity = 0;
       this.cart.get('cartProducts').forEach(el => {
-        prevQuantity = parseInt(el.quantity);
+          prevQuantity = parseInt(el.quantity);
       })
       product.set('quantity', parseInt(quantity) + parseInt(prevQuantity))
       if(quantity >= 1){

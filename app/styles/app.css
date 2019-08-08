@@ -1,7 +1,13 @@
+/* general */
 body{
   background-color: pink;
   height: 100%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
 }
 .body{
   padding: 18px;
@@ -47,4 +53,9 @@ body{
   align-items: center;
   justify-content: space-between;
   width: 350px;
+}
+.cart-total{
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
 }

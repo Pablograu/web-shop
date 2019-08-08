@@ -1,11 +1,12 @@
 <div class="jumbo">
   <CartAmount/>
-  <div class="right tomster"></div>
   <h2>Available items</h2>
   <p>
-    Here you see the available items
+    These are our premium items
   </p>
+  <div class="all-products">
+    {{#each this.model as |productUnit|}}
+      <ProductTile @product={{productUnit}} />
+    {{/each}}
+  </div>
 </div>
-{{#each this.model as |productUnit|}}
-  <ProductListing @product={{productUnit}} />
-{{/each}}
