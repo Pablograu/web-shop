@@ -59,3 +59,18 @@ a{
   font-size: 30px;
   justify-content: space-between;
 }
+
+.cart{
+  background-color: white;
+  padding: 30px;
+  height: 400px;
+}
+.cart ul{
+  height: 250px;
+}
+.cart .total-price{
+  font-size: 26px;
+}
+.total-price .no-items{
+  color: red;
+}

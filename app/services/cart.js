@@ -12,6 +12,7 @@ export default Service.extend({
   },
 
   add(product) {
+    console.log(this.get('cartProducts'),'cartProducts')
     if(this.cartProducts.includes(product)){
       this.get('cartProducts').removeObject(product);
       this.get('cartProducts').pushObject(product);

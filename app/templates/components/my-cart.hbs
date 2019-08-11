@@ -7,11 +7,11 @@
       </li>
     {{/each}}
   </ul>
-  <div class="totalPrice">
+  <div class="total-price">
     {{#if cart.totalPrice}}
       Total amount:{{cart.totalPrice}}$
     {{else}}
-      There are currently no items in your cart
+      <p class="no-items" >There are currently no items in your cart</p> 
   {{/if}}
   </div>
 </div>

@@ -2,8 +2,8 @@
   <article class="product-tile">
     <div>
       <h3>{{this.product.name}}</h3>
-      <p>Price: {{this.product.price}}</p>
-      <input type="number" name="quantity" step="1" value={{this.quantity}} min="1" onchange={{action "newQuantity" value="target.value" }}>
+      <p>Price: {{this.product.price}}£</p>
+      <input type="number" name="quantity" value={{this.quantity}} min="1" onchange={{action "newQuantity" value="target.value" }}>
     </div>
       <button {{action "addToCart" product this.quantity}}>Add to cart</button>
   </article>
